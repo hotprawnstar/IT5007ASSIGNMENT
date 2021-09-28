@@ -1,0 +1,514 @@
+.mediaViewInfo {
+	--web-view-name: V2 Home Page;
+	--web-view-id: V2_Home_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: V2_Home_Page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#V2_Home_Page {
+	position: absolute;
+	width: 1903px;
+	height: 2874px;
+	overflow: hidden;
+	--web-view-name: V2 Home Page;
+	--web-view-id: V2_Home_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Base {
+	position: absolute;
+	width: 1903px;
+	height: 2874px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Home_1 {
+	position: absolute;
+	width: 1903px;
+	height: 2874px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rectangle_40 {
+	fill: rgba(235,87,87,1);
+}
+.Rectangle_40 {
+	position: absolute;
+	overflow: visible;
+	width: 1163px;
+	height: 58px;
+	left: 416px;
+	top: 82px;
+}
+#Nav_Bar {
+	position: absolute;
+	width: 1393px;
+	height: 20px;
+	left: 416px;
+	top: 101px;
+	overflow: visible;
+}
+#Sign-in {
+	left: 1337px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 57px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#My_Trips_ {
+	left: 1248px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 67px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#Explore {
+	left: 1159px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 67px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#About {
+	left: 1070px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 67px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#Home {
+	left: 981px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 67px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#EXPLORA {
+	left: 0px;
+	top: 1px;
+	position: absolute;
+	overflow: hidden;
+	width: 77px;
+	height: 17px;
+	line-height: 20px;
+	margin-top: -3px;
+	text-align: center;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.7142857360839844px;
+}
+#Footer {
+	position: absolute;
+	width: 86px;
+	height: 28px;
+	left: 412px;
+	top: 2752px;
+	overflow: visible;
+}
+#Rectangle_41 {
+	fill: rgba(34,34,34,1);
+}
+.Rectangle_41 {
+	position: absolute;
+	overflow: visible;
+	width: 86px;
+	height: 28px;
+	left: 0px;
+	top: 0px;
+}
+#EXPLORA_bd {
+	left: 2px;
+	top: 4px;
+	position: absolute;
+	overflow: visible;
+	width: 77px;
+	height: 21px;
+	line-height: 20px;
+	margin-top: -3px;
+	text-align: center;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.7142857360839844px;
+}
+#Slice_1_1 {
+	fill: transparent;
+}
+.Slice_1_1 {
+	display: none;
+	position: absolute;
+	overflow: visible;
+	width: 557px;
+	height: 78px;
+	left: 506px;
+	top: 763px;
+}
+#Content {
+	position: absolute;
+	width: 1235px;
+	height: 645px;
+	left: 340px;
+	top: 736px;
+	overflow: visible;
+}
+#Rectangle_43 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_43 {
+	position: absolute;
+	overflow: visible;
+	width: 1210px;
+	height: 108px;
+	left: 2px;
+	top: 537px;
+}
+#Rectangle_42 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_42 {
+	position: absolute;
+	overflow: visible;
+	width: 1235px;
+	height: 119px;
+	left: 0px;
+	top: 0px;
+}
+#With_no_end_in_sight_to_the_CO {
+	left: 679px;
+	top: 11px;
+	position: absolute;
+	overflow: hidden;
+	width: 525px;
+	height: 85px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(51,51,51,1);
+}
+#Patronise_your_local_buesiness {
+	left: 27px;
+	top: 544px;
+	position: absolute;
+	overflow: visible;
+	width: 337px;
+	height: 85px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(51,51,51,1);
+}
+#There_are_plenty_of_charities_ {
+	left: 434px;
+	top: 544px;
+	position: absolute;
+	overflow: visible;
+	width: 337px;
+	height: 85px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(51,51,51,1);
+}
+#Know_someone_in_need_Purchase_ {
+	left: 844px;
+	top: 544px;
+	position: absolute;
+	overflow: visible;
+	width: 337px;
+	height: 85px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(51,51,51,1);
+}
+#Support_Local_Businesses {
+	filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.251));
+	left: 13px;
+	top: 29px;
+	position: absolute;
+	overflow: visible;
+	width: 521px;
+	height: 49px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(51,51,51,1);
+}
+#Text {
+	display: none;
+	left: 234px;
+	top: 58px;
+	position: absolute;
+	overflow: hidden;
+	width: 53px;
+	height: 12px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(51,51,51,1);
+}
+#We_need_your_help {
+	display: none;
+	left: 33px;
+	top: 11px;
+	position: absolute;
+	overflow: visible;
+	width: 477px;
+	height: 27px;
+	line-height: 20px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(51,51,51,1);
+}
+#Rectangle_49 {
+	fill: rgba(34,34,34,1);
+}
+.Rectangle_49 {
+	position: absolute;
+	overflow: visible;
+	width: 166px;
+	height: 58px;
+	left: 930px;
+	top: 2522px;
+}
+#Shop_Local {
+	position: absolute;
+	width: 617px;
+	height: 495px;
+	left: 838px;
+	top: 2118px;
+	overflow: visible;
+}
+#Rectangle_45 {
+	fill: rgba(34,34,34,1);
+}
+.Rectangle_45 {
+	position: absolute;
+	overflow: visible;
+	width: 439px;
+	height: 193px;
+	left: 113px;
+	top: 188px;
+}
+#Rectangle_44 {
+	fill: rgba(34,34,34,1);
+}
+.Rectangle_44 {
+	position: absolute;
+	overflow: visible;
+	width: 429px;
+	height: 64px;
+	left: 94px;
+	top: 18px;
+}
+#Fighting_Pandemic_Fatigue {
+	filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.251));
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 618px;
+	height: 69px;
+	text-align: center;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	color: rgba(249,249,249,1);
+}
+#This_has_made_dealing_with_the {
+	left: 120px;
+	top: 188px;
+	position: absolute;
+	overflow: hidden;
+	width: 378px;
+	height: 85px;
+	line-height: 24px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(249,249,249,1);
+}
+#Russell__Rachel_Explora {
+	left: 120px;
+	top: 410px;
+	position: absolute;
+	overflow: visible;
+	width: 378px;
+	height: 85px;
+	line-height: 24px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(249,249,249,1);
+}
+#Group_3 {
+	position: absolute;
+	width: 1184px;
+	height: 363px;
+	left: 359px;
+	top: 881px;
+	overflow: visible;
+}
+#Rectangle_46 {
+	fill: rgba(196,196,196,0);
+}
+.Rectangle_46 {
+	position: absolute;
+	overflow: visible;
+	width: 371px;
+	height: 363px;
+	left: 0px;
+	top: 0px;
+}
+#Rectangle_47 {
+	fill: rgba(196,196,196,0);
+}
+.Rectangle_47 {
+	position: absolute;
+	overflow: visible;
+	width: 371px;
+	height: 363px;
+	left: 413px;
+	top: 0px;
+}
+#Rectangle_48 {
+	fill: rgba(196,196,196,0);
+}
+.Rectangle_48 {
+	position: absolute;
+	overflow: visible;
+	width: 371px;
+	height: 363px;
+	left: 813px;
+	top: 0px;
+}
+#Rectangle_1 {
+	fill: transparent;
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 186px;
+	height: 73px;
+	left: 340px;
+	top: 74px;
+}
+#Rectangle_2 {
+	fill: transparent;
+}
+.Rectangle_2 {
+	width: 474px;
+	height: 73px;
+	position: absolute;
+	overflow: visible;
+	transform: matrix(1,0,0,1,1372,74) rotate(0deg);
+	transform-origin: center;
+}
+#Rectangle_3 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 160px;
+	height: 49px;
+	left: 716px;
+	top: 14px;
+}
