@@ -81,25 +81,13 @@ export class TableHeader extends React.Component {
   }
 
 }
-export class TableHeaderCell extends React.Component {
-  render() {
-    return /*#__PURE__*/React.createElement("div", {
-      id: this.props.TableHeaderCellID
-    }, /*#__PURE__*/React.createElement("div", {
-      className: this.props.TableHeaderCellClass,
-      id: this.props.TableHeaderCellContentID
-    }, this.props.TableHeaderCellContent));
-  }
-
-}
 export class Table extends React.Component {
   render() {
-    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(TableHeaderCell, {
-      TableHeaderCellClass: "Table_Top",
-      TableHeaderCellID: "Table_Stops_Header",
-      TableHeaderCellContentID: "Table_Stops_Header_Content",
-      TableHeaderCellContent: "Stops"
-    }));
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("table", {
+      id: "Table"
+    }, /*#__PURE__*/React.createElement(TableHeader, {
+      TableHeaderDivID: "Table_Top"
+    })));
   }
 
 }
@@ -151,13 +139,13 @@ export class DeleteIcon extends React.Component {
       id: this.props.logo,
       className: this.props.logoClass
     }, /*#__PURE__*/React.createElement("svg", {
-      class: "Vector_no",
+      className: "Vector_no",
       viewBox: "0 0 24 24"
     }, /*#__PURE__*/React.createElement("path", {
       id: "Vector_no",
       d: "M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z"
     })), /*#__PURE__*/React.createElement("svg", {
-      class: "Vector_np",
+      className: "Vector_np",
       viewBox: "0 0 20 20"
     }, /*#__PURE__*/React.createElement("path", {
       id: "Vector_np",
@@ -172,7 +160,7 @@ export class ExportIcon extends React.Component {
       id: this.props.logo,
       className: this.props.logoClass
     }, /*#__PURE__*/React.createElement("svg", {
-      class: "Vector_ny",
+      className: "Vector_ny",
       viewBox: "0 0 19.981 19.987"
     }, /*#__PURE__*/React.createElement("path", {
       id: "Vector_ny",

@@ -8,11 +8,11 @@ class TripButtons extends React.Component{
         return(
             <div id = "Buttons">
             <React.Fragment>
-            <components.Button buttonDivID = "Create_Button" buttonFrameID = "Create_Button_Frame" buttonBG = "Create_Button_bg" buttonFrameClass = "Create_Button_Frame" buttonLogo ={<CreateIcon logo ="Create_Button_Logo"/>} buttonContentID = "Create_Button_Content" buttonContent = "Create"/>
+            <components.Button buttonDivID = "Create_Button" buttonFrameID = "Create_Button_Frame" buttonBG = "Create_Button_bg" buttonFrameClass = "Create_Button_Frame" buttonLogo ={<components.CreateIcon logo ="Create_Button_Logo"/>} buttonContentID = "Create_Button_Content" buttonContent = "Create"/>
 
-            <components.Button buttonDivID = "Delete_Button" buttonFrameID = "Delete_Button_Frame" buttonBG = "Delete_Button_bg" buttonFrameClass = "Delete_Button_Frame" buttonLogo ={<DeleteIcon logo ="Delete_Button_Logo"/>} buttonContentID = "Delete_Button_Content" buttonContent = "Delete"/>
+            <components.Button buttonDivID = "Delete_Button" buttonFrameID = "Delete_Button_Frame" buttonBG = "Delete_Button_bg" buttonFrameClass = "Delete_Button_Frame" buttonLogo ={<components.DeleteIcon logo ="Delete_Button_Logo"/>} buttonContentID = "Delete_Button_Content" buttonContent = "Delete"/>
 
-            <components.Button buttonDivID = "Export_button" buttonFrameID = "Export_Button_Frame" buttonBG = "Export_Button_bg" buttonFrameClass = "Export_Button_Frame" buttonLogo ={<ExportIcon logo ="Export_Button_Logo"/>} buttonContentID = "Export_Button_Content" buttonContent = "Export"/>
+            <components.Button buttonDivID = "Export_button" buttonFrameID = "Export_Button_Frame" buttonBG = "Export_Button_bg" buttonFrameClass = "Export_Button_Frame" buttonLogo ={<components.ExportIcon logo ="Export_Button_Logo"/>} buttonContentID = "Export_Button_Content" buttonContent = "Export"/>
 
 
             </React.Fragment>
@@ -24,14 +24,23 @@ class TripButtons extends React.Component{
 class TripTable extends React.Component{
     render(){
         return(
-            <div id = "Table">
+
         <React.Fragment><components.Table /></React.Fragment>
-        </div>);
+);
     }
 }
 
+class Body extends React.Component{
+    render(){
+        return(
+            <React.Fragment>
+                <TripTable />
+                <TripButtons/>
+            </React.Fragment>
+        );
+    }
+}
 
-
-const element = <TripTable />;
+const element = <Body />;
 
 ReactDOM.render(element, document.getElementById('Group_4'));

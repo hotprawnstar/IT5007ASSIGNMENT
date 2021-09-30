@@ -10,7 +10,7 @@ class TripButtons extends React.Component {
       buttonFrameID: "Create_Button_Frame",
       buttonBG: "Create_Button_bg",
       buttonFrameClass: "Create_Button_Frame",
-      buttonLogo: /*#__PURE__*/React.createElement(CreateIcon, {
+      buttonLogo: /*#__PURE__*/React.createElement(components.CreateIcon, {
         logo: "Create_Button_Logo"
       }),
       buttonContentID: "Create_Button_Content",
@@ -20,7 +20,7 @@ class TripButtons extends React.Component {
       buttonFrameID: "Delete_Button_Frame",
       buttonBG: "Delete_Button_bg",
       buttonFrameClass: "Delete_Button_Frame",
-      buttonLogo: /*#__PURE__*/React.createElement(DeleteIcon, {
+      buttonLogo: /*#__PURE__*/React.createElement(components.DeleteIcon, {
         logo: "Delete_Button_Logo"
       }),
       buttonContentID: "Delete_Button_Content",
@@ -30,7 +30,7 @@ class TripButtons extends React.Component {
       buttonFrameID: "Export_Button_Frame",
       buttonBG: "Export_Button_bg",
       buttonFrameClass: "Export_Button_Frame",
-      buttonLogo: /*#__PURE__*/React.createElement(ExportIcon, {
+      buttonLogo: /*#__PURE__*/React.createElement(components.ExportIcon, {
         logo: "Export_Button_Logo"
       }),
       buttonContentID: "Export_Button_Content",
@@ -42,12 +42,17 @@ class TripButtons extends React.Component {
 
 class TripTable extends React.Component {
   render() {
-    return /*#__PURE__*/React.createElement("div", {
-      id: "Table"
-    }, /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(components.Table, null)));
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(components.Table, null));
   }
 
 }
 
-const element = /*#__PURE__*/React.createElement(TripTable, null);
+class Body extends React.Component {
+  render() {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(TripTable, null), /*#__PURE__*/React.createElement(TripButtons, null));
+  }
+
+}
+
+const element = /*#__PURE__*/React.createElement(Body, null);
 ReactDOM.render(element, document.getElementById('Group_4'));
