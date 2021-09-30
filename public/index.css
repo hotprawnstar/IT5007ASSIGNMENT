@@ -4886,7 +4886,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Frame_13 {
+#Create_Button_Frame {
 	position: absolute;
 	width: 154px;
 	height: 60px;
@@ -4894,10 +4894,10 @@
 	top: 0px;
 	overflow: visible;
 }
-#Frame_13_ne {
+#Create_Button_bg {
 	fill: rgba(235,87,87,1);
 }
-.Frame_13_ne {
+.Create_Button_Frame {
 	position: absolute;
 	overflow: visible;
 	width: 154px;
@@ -4905,7 +4905,7 @@
 	left: 0px;
 	top: 0px;
 }
-#OutlineInterfaceAdd {
+#Create_Button_Logo {
 	position: absolute;
 	width: 24px;
 	height: 24px;
@@ -4937,7 +4937,7 @@
 	top: 3.51px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#Create {
+#Create_Button_Content {
 	left: 74px;
 	top: 18px;
 	position: absolute;
@@ -4959,7 +4959,7 @@
 	top: 81px;
 	overflow: visible;
 }
-#Frame_13_nk {
+#Delete_Button_Frame {
 	position: absolute;
 	width: 152px;
 	height: 60px;
@@ -4967,10 +4967,10 @@
 	top: 2px;
 	overflow: visible;
 }
-#Frame_13_nl {
+#Delete_Button_bg {
 	fill: rgba(235,87,87,1);
 }
-.Frame_13_nl {
+.Delete_Button_Frame {
 	position: absolute;
 	overflow: visible;
 	width: 152px;
@@ -4978,7 +4978,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Line {
+#Delete_Button_Logo {
 	position: absolute;
 	width: 24px;
 	height: 24px;
@@ -5018,7 +5018,7 @@
 	top: 2px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#Delete {
+#Delete_Button_Content {
 	left: 74px;
 	top: 18px;
 	position: absolute;
@@ -5059,7 +5059,7 @@
 	top: 165px;
 	overflow: visible;
 }
-#Frame_13_nu {
+#Export_Button_Frame {
 	position: absolute;
 	width: 153px;
 	height: 60px;
@@ -5067,10 +5067,10 @@
 	top: 1px;
 	overflow: visible;
 }
-#Frame_13_nv {
+#Export_Button_bg {
 	fill: rgba(235,87,87,1);
 }
-.Frame_13_nv {
+.Export_Button_Frame {
 	position: absolute;
 	overflow: visible;
 	width: 153px;
@@ -5078,7 +5078,7 @@
 	left: 0px;
 	top: 0px;
 }
-#OutlineFilesDownload {
+#Export_Button_Logo {
 	position: absolute;
 	width: 24px;
 	height: 24px;
@@ -5106,7 +5106,7 @@
 	top: 2.013px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#Export {
+#Export_Button_Content {
 	left: 74px;
 	top: 18px;
 	position: absolute;

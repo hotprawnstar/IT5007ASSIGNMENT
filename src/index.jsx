@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+class BaseHTML extends React.Component(){
+
+    render(){
+        return(
 <html>
 <head>
     
@@ -6,14 +9,14 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>My Trips</title>
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="index.css"/>
 </head>
 <body>
 <div id="My_Trips">
 	<div id="Base">
-		<img id="Login_1" src="img/Login_1_g.png" srcset="img/Login_1_g.png 1x, img/Login_1_g@2x.png 2x">
+		<img id="Login_1" src="img/Login_1_g.png" srcset="img/Login_1_g.png 1x, img/Login_1_g@2x.png 2x" />
 			
 		<svg class="Rectangle_40">
 			<rect id="Rectangle_40" rx="0" ry="0" x="0" y="0" width="1163" height="58">
@@ -67,6 +70,11 @@
     
 
 </div>
-<script type = "module" src = "/App.js" async></script>
+<script type = "module" src = "/App.js" defer></script>
 </body>
 </html>
+        );
+    }
+}
+
+export default BaseHTML;
