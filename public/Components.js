@@ -1,3 +1,108 @@
+const dummyData = [{
+  TripName: 'Louis Vuitton',
+  Stops: '10',
+  Algorithm: 'Bravo',
+  StartingLocation: 'Singapore 123456',
+  TripDate: '30/12/2021',
+  Created: '29/08/2021 10:00',
+  Updated: '29/08/2021 10:00'
+}, {
+  TripName: 'Johnson & Johnson',
+  Stops: '9',
+  Algorithm: 'Alfa',
+  StartingLocation: 'Singapore 123456',
+  TripDate: '30/12/2021',
+  Created: '29/08/2021 10:00',
+  Updated: '29/08/2021 10:00'
+}, {
+  TripName: 'Starbucks',
+  Stops: '11',
+  Algorithm: 'Bravo',
+  StartingLocation: 'Singapore 123456',
+  TripDate: '30/12/2021',
+  Created: '29/08/2021 10:00',
+  Updated: '29/08/2021 10:00'
+}, {
+  TripName: 'The Walt Disney',
+  Stops: '10',
+  Algorithm: 'Alfa',
+  StartingLocation: 'Singapore 123456',
+  TripDate: '30/12/2021',
+  Created: '29/08/2021 10:00',
+  Updated: '29/08/2021 10:00'
+}, {
+  TripName: 'Mitsubishi',
+  Stops: '10',
+  Algorithm: 'Bravo',
+  StartingLocation: 'Singapore 123456',
+  TripDate: '30/12/2021',
+  Created: '29/08/2021 10:00',
+  Updated: '29/08/2021 10:00'
+}, {
+  TripName: 'IBM',
+  Stops: '10',
+  Algorithm: 'Gold',
+  StartingLocation: 'Singapore 123456',
+  TripDate: '30/12/2021',
+  Created: '29/08/2021 10:00',
+  Updated: '29/08/2021 10:00'
+}];
+const TripColumns = [{
+  Header: 'Trip Name',
+  accessor: 'TripName'
+}, {
+  Header: 'Stops',
+  accessor: 'Stops'
+}, {
+  Header: 'Algorithm',
+  accessor: 'Algorithm'
+}, {
+  Header: 'Starting Location',
+  accessor: 'StartingLocation'
+}, {
+  Header: 'Trip Date',
+  accessor: 'TripDate'
+}, {
+  Header: 'Created',
+  accessor: 'Created'
+}, {
+  Header: 'Updated',
+  accessor: 'Updated'
+}, {
+  Header: 'Action',
+  accessor: ''
+}];
+export class TableHeader extends React.Component {
+  render() {
+    const columns = TripColumns.map(columns => /*#__PURE__*/React.createElement("th", {
+      key: columns.accessor
+    }, columns.Header));
+    return /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, columns));
+  }
+
+}
+export class TableHeaderCell extends React.Component {
+  render() {
+    return /*#__PURE__*/React.createElement("div", {
+      id: this.props.TableHeaderCellID
+    }, /*#__PURE__*/React.createElement("div", {
+      className: this.props.TableHeaderCellClass,
+      id: this.props.TableHeaderCellContentID
+    }, this.props.TableHeaderCellContent));
+  }
+
+}
+export class Table extends React.Component {
+  render() {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(TableHeaderCell, {
+      TableHeaderCellClass: "Table_Top",
+      TableHeaderCellID: "Table_Stops_Header",
+      TableHeaderCellContentID: "Table_Stops_Header_Content",
+      TableHeaderCellContent: "Stops"
+    }));
+  }
+
+}
 export class Button extends React.Component {
   render() {
     return /*#__PURE__*/React.createElement("div", {

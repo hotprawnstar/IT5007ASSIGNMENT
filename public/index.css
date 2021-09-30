@@ -223,7 +223,7 @@
 	color: rgba(255,255,255,1);
 	letter-spacing: 0.7142857360839844px;
 }
-#Table {
+#TripTable {
 	position: absolute;
 	width: 1539px;
 	height: 641.001px;
@@ -4166,7 +4166,7 @@
 	top: 0px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#Table_Top_lm {
+#Table_Stops_Header {
 	position: absolute;
 	width: 191px;
 	height: 102px;
@@ -4250,7 +4250,7 @@
 	display: none;
 	overflow: visible;
 }
-#All_lu {
+#Table_Stops_Header_Content {
 	left: 0px;
 	top: 0px;
 	position: absolute;

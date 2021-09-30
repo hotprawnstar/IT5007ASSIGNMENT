@@ -1,6 +1,5 @@
-import {useColumnOrder, useTable} from 'react-table';
 
-const dummyData = React.useMemo(() =>[
+const dummyData = [
     {
     TripName: 'Louis Vuitton',
     Stops: '10',
@@ -55,12 +54,9 @@ const dummyData = React.useMemo(() =>[
     Created:'29/08/2021 10:00',
     Updated:'29/08/2021 10:00'
     }
-    ], [])
+    ]
 
-const TripColumns = React.useMemo(() => [
-    {
-        Header: 'Trip Data',
-        columns:[
+const TripColumns = [
     {
         Header: 'Trip Name',
         accessor: 'TripName'
@@ -92,33 +88,45 @@ const TripColumns = React.useMemo(() => [
     {
         Header: 'Action',
         accessor:''
-    } ]}
-], [])
-
-const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    rows,
-    prepareRow
-} = useTable({TripColumns, dummyData})
+    }
+]
 
 
-export class Table extends React.Component{
+export class TableHeader extends React.Component{
     render(){
+    const columns = TripColumns.map(columns=> <th key = {columns.accessor}>{columns.Header}</th>)
         return(
-            <table {...getTableProps()}>
-                <thead >
-                    <tr>
-                    {...TripColumns.map(TripColumns => (
-   <th {...TripColumns.getHeaderProps()}>{TripColumns.render('Header')}
 
-   </th>
-))}</tr>
+<thead>
+<tr>{columns}</tr>
+
 </thead>
 
-            </table>
 
+        );
+    }
+}
+
+export class TableHeaderCell extends React.Component{
+    render(){
+        return(
+<div id = {this.props.TableHeaderCellID}>
+    <div className = {this.props.TableHeaderCellClass} id = {this.props.TableHeaderCellContentID}>{this.props.TableHeaderCellContent}</div>
+</div>
+
+
+        );
+    }
+}
+
+export class TableHeader extends React.Component{
+    render(){
+
+        return(
+            <React.Fragment>
+    
+<TableHeaderCell TableHeaderCellClass = "Table_Top" TableHeaderCellID = "Table_Stops_Header" TableHeaderCellContentID = "Table_Stops_Header_Content" TableHeaderCellContent = "Stops"/>
+</React.Fragment>
         );
     }
 }

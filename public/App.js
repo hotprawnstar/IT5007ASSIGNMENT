@@ -1,5 +1,5 @@
-import * as components from './Components.js';
-import { useTable } from 'react-table';
+import * as components from './Components.js'; // import { useTable } from '/node_modules/react-table/dist/react-table.development.js';
+// // import {useTable} from './react-table';
 
 class TripButtons extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class TripButtons extends React.Component {
       buttonFrameID: "Create_Button_Frame",
       buttonBG: "Create_Button_bg",
       buttonFrameClass: "Create_Button_Frame",
-      buttonLogo: /*#__PURE__*/React.createElement(components.CreateIcon, {
+      buttonLogo: /*#__PURE__*/React.createElement(CreateIcon, {
         logo: "Create_Button_Logo"
       }),
       buttonContentID: "Create_Button_Content",
@@ -20,7 +20,7 @@ class TripButtons extends React.Component {
       buttonFrameID: "Delete_Button_Frame",
       buttonBG: "Delete_Button_bg",
       buttonFrameClass: "Delete_Button_Frame",
-      buttonLogo: /*#__PURE__*/React.createElement(components.DeleteIcon, {
+      buttonLogo: /*#__PURE__*/React.createElement(DeleteIcon, {
         logo: "Delete_Button_Logo"
       }),
       buttonContentID: "Delete_Button_Content",
@@ -30,7 +30,7 @@ class TripButtons extends React.Component {
       buttonFrameID: "Export_Button_Frame",
       buttonBG: "Export_Button_bg",
       buttonFrameClass: "Export_Button_Frame",
-      buttonLogo: /*#__PURE__*/React.createElement(components.ExportIcon, {
+      buttonLogo: /*#__PURE__*/React.createElement(ExportIcon, {
         logo: "Export_Button_Logo"
       }),
       buttonContentID: "Export_Button_Content",
