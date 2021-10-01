@@ -1,6 +1,7 @@
 
 const dummyData = [
     {
+        id: 1,
     TripName: 'Louis Vuitton',
     Stops: '10',
     Algorithm: 'Bravo',
@@ -10,6 +11,7 @@ const dummyData = [
     Updated:'29/08/2021 10:00'
     },
     {
+        id : 2,
     TripName: 'Johnson & Johnson',
     Stops: '9',
     Algorithm: 'Alfa',
@@ -19,6 +21,7 @@ const dummyData = [
     Updated:'29/08/2021 10:00'
     },
     {
+        id:3,
     TripName: 'Starbucks',
     Stops: '11',
     Algorithm: 'Bravo',
@@ -28,6 +31,7 @@ const dummyData = [
     Updated:'29/08/2021 10:00'
     },
     {
+        id:4,
     TripName: 'The Walt Disney',
     Stops: '10',
     Algorithm: 'Alfa',
@@ -37,6 +41,7 @@ const dummyData = [
     Updated:'29/08/2021 10:00'
     },
     {
+        id:5,
     TripName: 'Mitsubishi',
     Stops: '10',
     Algorithm: 'Bravo',
@@ -46,6 +51,7 @@ const dummyData = [
     Updated:'29/08/2021 10:00'
     },
     {
+        id:6,
     TripName: 'IBM',
     Stops: '10',
     Algorithm:'Gold',
@@ -94,10 +100,10 @@ const TripColumns = [
 
 export class TableHeader extends React.Component{
     render(){
-    const columns = TripColumns.map(columns=> <th key = {columns.accessor}>{columns.Header}</th>)
+    const columns = this.props.data.map(columns=> <th key = {columns.accessor}>{columns.Header}</th>)
         return(
-<thead>
-<tr>{columns}</tr>
+<thead >
+<tr className='TripTable'><th valign = 'center' ><input type = "checkbox"/></th>{columns}</tr>
 
 </thead>
 
@@ -106,14 +112,34 @@ export class TableHeader extends React.Component{
     }
 }
 
+export class TableContent extends React.Component{
+    render(){
+        const rows = this.props.data.map(rows => <tr className='TripTable' align = 'center' key = {rows.id}>
+            <td><input type = "checkbox" id = {rows.id}></input></td>
+            <td>{rows.TripName}</td>
+            <td>{rows.Stops}</td>
+            <td>{rows.Algorithm}</td>
+            <td>{rows.StartingLocation}</td>
+            <td>{rows.TripDate}</td>
+            <td>{rows.Created}</td>
+            <td>{rows.Updated}</td>
+            </tr>
+)
+        return(
+            <tbody>
+{rows}</tbody>
+        );
+    }
+}
 
 
 export class Table extends React.Component{
     render(){
 
         return(
-<React.Fragment><table id = "Table">
-    <TableHeader  TableHeaderDivID = "Table_Top"/>
+<React.Fragment><table id = "Table" width = "100%">
+    <TableHeader  TableHeaderDivID = "Table_Top" data = {TripColumns}/>
+    <TableContent data = {dummyData} />
     
     </table>
     </React.Fragment>

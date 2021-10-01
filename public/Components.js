@@ -1,4 +1,5 @@
 const dummyData = [{
+  id: 1,
   TripName: 'Louis Vuitton',
   Stops: '10',
   Algorithm: 'Bravo',
@@ -7,6 +8,7 @@ const dummyData = [{
   Created: '29/08/2021 10:00',
   Updated: '29/08/2021 10:00'
 }, {
+  id: 2,
   TripName: 'Johnson & Johnson',
   Stops: '9',
   Algorithm: 'Alfa',
@@ -15,6 +17,7 @@ const dummyData = [{
   Created: '29/08/2021 10:00',
   Updated: '29/08/2021 10:00'
 }, {
+  id: 3,
   TripName: 'Starbucks',
   Stops: '11',
   Algorithm: 'Bravo',
@@ -23,6 +26,7 @@ const dummyData = [{
   Created: '29/08/2021 10:00',
   Updated: '29/08/2021 10:00'
 }, {
+  id: 4,
   TripName: 'The Walt Disney',
   Stops: '10',
   Algorithm: 'Alfa',
@@ -31,6 +35,7 @@ const dummyData = [{
   Created: '29/08/2021 10:00',
   Updated: '29/08/2021 10:00'
 }, {
+  id: 5,
   TripName: 'Mitsubishi',
   Stops: '10',
   Algorithm: 'Bravo',
@@ -39,6 +44,7 @@ const dummyData = [{
   Created: '29/08/2021 10:00',
   Updated: '29/08/2021 10:00'
 }, {
+  id: 6,
   TripName: 'IBM',
   Stops: '10',
   Algorithm: 'Gold',
@@ -74,19 +80,43 @@ const TripColumns = [{
 }];
 export class TableHeader extends React.Component {
   render() {
-    const columns = TripColumns.map(columns => /*#__PURE__*/React.createElement("th", {
+    const columns = this.props.data.map(columns => /*#__PURE__*/React.createElement("th", {
       key: columns.accessor
     }, columns.Header));
-    return /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, columns));
+    return /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
+      className: "TripTable"
+    }, /*#__PURE__*/React.createElement("th", {
+      valign: "center"
+    }, /*#__PURE__*/React.createElement("input", {
+      type: "checkbox"
+    })), columns));
+  }
+
+}
+export class TableContent extends React.Component {
+  render() {
+    const rows = this.props.data.map(rows => /*#__PURE__*/React.createElement("tr", {
+      className: "TripTable",
+      align: "center",
+      key: rows.id
+    }, /*#__PURE__*/React.createElement("td", null, /*#__PURE__*/React.createElement("input", {
+      type: "checkbox",
+      id: rows.id
+    })), /*#__PURE__*/React.createElement("td", null, rows.TripName), /*#__PURE__*/React.createElement("td", null, rows.Stops), /*#__PURE__*/React.createElement("td", null, rows.Algorithm), /*#__PURE__*/React.createElement("td", null, rows.StartingLocation), /*#__PURE__*/React.createElement("td", null, rows.TripDate), /*#__PURE__*/React.createElement("td", null, rows.Created), /*#__PURE__*/React.createElement("td", null, rows.Updated)));
+    return /*#__PURE__*/React.createElement("tbody", null, rows);
   }
 
 }
 export class Table extends React.Component {
   render() {
     return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("table", {
-      id: "Table"
+      id: "Table",
+      width: "100%"
     }, /*#__PURE__*/React.createElement(TableHeader, {
-      TableHeaderDivID: "Table_Top"
+      TableHeaderDivID: "Table_Top",
+      data: TripColumns
+    }), /*#__PURE__*/React.createElement(TableContent, {
+      data: dummyData
     })));
   }
 

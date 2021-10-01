@@ -228,8 +228,12 @@
 	width: 1539px;
 	height: 641.001px;
 	left: 226px;
-	top: 222px;
+	top: 75px;
 	overflow: visible;
+}
+
+.TripTable{
+	border-bottom:1px solid black;
 }
 #Row_6 {
 	position: absolute;
@@ -4875,7 +4879,7 @@
 	width: 162px;
 	height: 242px;
 	left: 30px;
-	top: 228px;
+	top: 81px;
 	overflow: visible;
 }
 #Create_Button {
